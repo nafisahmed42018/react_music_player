@@ -11,10 +11,10 @@ const LibrarySong = ({
   isPlaying,
 }) => {
   //Event Handlers
-  const songSelectHandler = async () => {
+  const songSelectHandler = () => {
     // const selectedSong = songs.filter(state => state.id === id);
     // console.log(selectedSong);
-    await setCurrentSong(song);
+    setCurrentSong(song);
 
     const newSongs = songs.map(song => {
       if (song.id === id) {
